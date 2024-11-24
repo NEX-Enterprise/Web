@@ -1,0 +1,262 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', monospace;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(120deg, #ff0080, #e600ff);
+    text-align: center;
+    padding: 3rem 0;
+    box-shadow: 0 0 30px #ff0080, 0 0 60px #e600ff;
+    animation: neon-pulse 2s infinite alternate;
+}
+
+header .neon-text h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #e600ff, 0 0 40px #e600ff;
+}
+
+header .neon-text p {
+    font-size: 1.5rem;
+    color: #f4f4f4;
+    text-shadow: 0 0 8px #e600ff, 0 0 16px #ff0080;
+}
+
+@keyframes neon-pulse {
+    from {
+        box-shadow: 0 0 30px #ff0080, 0 0 60px #e600ff;
+    }
+    to {
+        box-shadow: 0 0 50px #ff0080, 0 0 90px #e600ff;
+    }
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #ff0080;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #e600ff;
+    animation: fade-in 1s ease-out;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+.apps {
+    margin-top: 2rem;
+}
+
+.apps .app-card {
+    display: inline-block;
+    background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+    border: 1px solid #333;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff0080, 0 0 30px #e600ff;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    width: 300px;
+}
+
+.apps .app-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px #ff0080, 0 0 70px #e600ff;
+}
+
+.apps .app-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.apps .app-card h3 {
+    font-size: 1.8rem;
+    color: #ff0080;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #e600ff;
+    margin-bottom: 0.5rem;
+}
+
+.apps .btn-download {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #ff0080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    text-shadow: 0 0 5px #e600ff;
+}
+
+.apps .btn-download:hover {
+    background: #e600ff;
+}
+
+.cta {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #ff0080, 0 0 50px #e600ff;
+}
+
+.cta h2 {
+    color: #e600ff;
+    text-shadow: 0 0 10px #e600ff, 0 0 20px #ff0080;
+}
+
+.cta input[type="email"] {
+    padding: 0.8rem;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    background: #222;
+    color: #fff;
+}
+
+.cta button {
+    padding: 0.8rem 1.5rem;
+    background: #ff0080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-shadow: 0 0 5px #e600ff;
+}
+
+.cta button:hover {
+    background: #e600ff;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+    background: #0d0d0d;
+    font-size: 0.9rem;
+}
+
+footer .socials {
+    margin-bottom: 1rem;
+}
+
+footer .socials a {
+    margin: 0 0.5rem;
+    color: #e600ff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .socials a:hover {
+    color: #ff0080;
+}
+
+/* Efecto general */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', monospace;
+    background: #000;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Logo */
+header .logo {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+header .logo img {
+    width: 150px;
+    animation: glow 2s infinite alternate;
+}
+
+header .logo p {
+    color: #fff;
+    text-shadow: 0 0 8px #e600ff, 0 0 16px #ff0080;
+    margin-top: 1rem;
+}
+
+/* Tarjetas de apps */
+.apps .app-card {
+    display: inline-block;
+    background: linear-gradient(120deg, #121212, #1f1f1f);
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px #ff0080, 0 0 40px #e600ff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.apps .app-card i {
+    font-size: 4rem;
+    color: #ff0080;
+    margin-bottom: 1rem;
+    animation: flicker 2s infinite alternate;
+}
+
+/* Formulario */
+.cta button {
+    background: linear-gradient(120deg, #ff0080, #e600ff);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff0080, 0 0 40px #e600ff;
+}
+
+/* Animaciones */
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 10px #ff0080);
+    }
+    to {
+        filter: drop-shadow(0 0 30px #e600ff);
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
