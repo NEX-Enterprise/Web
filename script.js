@@ -42,3 +42,12 @@ particlesJS("particles-js", {
         },
     },
 });
+
+// Esperar 3 segundos antes de mostrar el contenido
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }, 3000);
+});
+
